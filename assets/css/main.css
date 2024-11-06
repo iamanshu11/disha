@@ -1003,11 +1003,18 @@ section,
   border: 1px solid #B0CB3A;
   padding: 10px 20px;
 }
+.zf-data-file{
+  display: flex;
+}
 
 @media only screen and (max-width: 991px) {
   .let-data-df{
     text-align: center;
     gap: 20px;
+  }
+
+  .zf-data-file{
+    display: none;
   }
 
 }
