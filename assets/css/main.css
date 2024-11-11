@@ -1018,3 +1018,124 @@ section,
   }
 
 }
+
+/* .nigel-about-desk-top{
+  position: relative;
+  overflow: visible;
+
+}
+.nigel-about-desk{
+  background: linear-gradient(to left, #2D3E4A 100%, #1F2329 100%);
+  border-radius: 400px;
+}
+
+.nigel-about-desk-img{
+  position: absolute;
+  top: -9%;
+  right: 0%;
+}
+
+.nigel-about-desk-img img{
+  height: 600px;
+}
+
+.about-for-desktop-data-text h4 {
+  color: #5CCB3A;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-for-desktop-data-text-partner {
+  color: #5CCB3A;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.about-for-desktop-data-disha {
+  color: #939598;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.about-for-desktop-data-text{
+  padding: 40px 175px;
+} */
+
+.nigel-about-desk-top {
+  position: relative;
+  overflow: visible;
+}
+
+.nigel-about-desk {
+  background: linear-gradient(to left, #2D3E4A 100%, #1F2329 100%);
+  border-radius: 400px;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.nigel-about-desk-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+}
+
+.nigel-about-desk-img img {
+  height: 600px;
+}
+
+.about-for-desktop-data-text h4 {
+  color: #5CCB3A;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-for-desktop-data-text-partner {
+  color: #5CCB3A;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.about-for-desktop-data-disha {
+  color: #939598;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.about-ffff{
+  position: absolute;
+  width: 70%;
+  height: 400px;
+  top: 36%;
+  background: linear-gradient(to left, #2D3E4A 100%, #1F2329 100%);
+  padding: 20px 363px 20px 131px;
+  border-radius: 200px;
+  left: 2%;
+}
+
+.nigel-about-desk-top{
+  display: block;
+}
+
+@media screen and (max-width: 1545px) and (min-width: 991px){
+  .about-for-mob{
+    display: block;
+  }
+
+  .nigel-about-desk-top{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .nigel-about-desk-top{
+    display: none;
+  }
+
+}
