@@ -1020,15 +1020,18 @@ section,
   }
 
   .carousel-test .owl-prev {
-    top: 50%;
+
+    display: none;
+    /* top: 50%;
     left: -2px;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
   }
   
   .carousel-test .owl-next {
-    top: 50%;
+    display: none;
+    /* top: 50%;
     right: -2px;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
   }
 
 }
