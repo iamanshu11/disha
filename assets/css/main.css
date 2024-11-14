@@ -1383,6 +1383,9 @@ section,
   font-size: 14px;
 }
 
+.df-flex-web{
+  flex-direction: row-reverse;
+}
 @media (max-width: 768px) {
   .hero-text h1 {
     font-family: "Roboto";
@@ -1401,5 +1404,9 @@ section,
 .for-para p {
   color: #A9A9A9;
   font-size: 14px;
+}
+
+.df-flex{
+  flex-direction: column-reverse;
 }
 }
