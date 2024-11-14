@@ -1,7 +1,46 @@
+let typeJsText = document.querySelector(".typeJsText");
+let text = typeJsText.dataset.typetext;
+let index = 0;
+let isDeleting = false;
+let delayAfterFullText = false;
+
+typeJsText.innerHTML = "";
+
+function typeJs() {
+  if (!isDeleting && index <= text.length) {
+    // Typing the text
+    typeJsText.innerHTML = text.substring(0, index);
+    index++;
+  } else if (isDeleting && index >= 0) {
+    // Deleting the text
+    typeJsText.innerHTML = text.substring(0, index);
+    index--;
+  }
+
+  if (index === text.length && !delayAfterFullText) {
+    // Full sentence is printed, initiate delay
+    delayAfterFullText = true;
+    setTimeout(() => {
+      isDeleting = true;
+      delayAfterFullText = false;
+    }, 2000); // 2-second delay before starting deletion
+  }
+
+  if (index === 0) {
+    // Reset for typing again
+    isDeleting = false;
+  }
+}
+
+setInterval(typeJs, 100);
 
 (function() {
   "use strict";
-
+  $('.scroll-down').click(function() {
+    $('html, body').animate({
+        scrollTop: $('section').next().offset().top
+    }, 1000);
+});
   $('.carousel-test').owlCarousel({
     loop: true,
     margin: 10,
@@ -116,6 +155,12 @@
   }
   window.addEventListener('load', aosInit);
 
+    /**
+   * AOS
+   */
+    AOS.init();
+
+
   /**
    * Init swiper sliders
    */
@@ -221,5 +266,6 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
 
 
