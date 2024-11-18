@@ -14,7 +14,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -24,8 +26,18 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link href="assets/css/get-in-touch.css" rel="stylesheet">
 
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16781994823"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-16781994823');
+  </script>
 
 </head>
 
@@ -51,9 +63,10 @@
         <ul>
           <li><a href="index.html" class="active">Home<br></a></li>
           <li><a href="#service">Services</a></li>
-          <li><a href="#port">Portfolio</a></li>
-          <li><a href="https://dishacom.com/clients/">Clients</a></li>
-          <li><a href="https://dishacom.com/awards/">Awards</a></li>
+          <li><a href="#client">Clients</a></li>
+          <li><a href="#our-work">Work</a></li>
+  
+      
           <!-- <li><a href="#career">Career</a></li> -->
           <!-- <li><a href="#contact-us">Contact Us</a></li> -->
           <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -96,8 +109,8 @@
               <P class="text-white mt-3">India’s trusted agency, delivering results across North America, Europe, and beyond with high quality and reliability – on time, every time.</P>
             </div>
             <div class="mt-4 hero-btn d-flex align-items-center justify-content-center gap-5 text-center">
-              <a href="#" class="hero-btn-green">Get in touch</a>
-              <a href="#" class="hero-btn-border">Work</a>
+              <a href="#" class="hero-btn-green" data-bs-toggle="modal" data-bs-target="#exampleModal">Get in touch</a>
+              <a href="#our-work" class="hero-btn-border">Work</a>
             </div>
           </div>
     
@@ -154,12 +167,12 @@
       </div>
     </section>
 
-    <section class="tailored-offerings" id="port">
+    <section class="tailored-offerings" id="our-work">
       <div class="container">
         <div class="row for-para align-items-center justify-content-center mb-5">
           <div class="col-lg-8">
             <div class="hero-text text-center">
-              <p><span style="color: #B2D234;">Portfolio </span> </p>
+              <p><span style="color: #B2D234;">Our Work </span> </p>
               <h1 class="text-white">Trusted by Global Leaders and Ambitious Start-ups </h1>
               <p>India’s trusted agency, delivering results across North America, Europe, and beyond with high quality and
                 reliability – on time, every time.</p>
@@ -172,7 +185,7 @@
             <div class="col-12 col-md-6 col-lg-12">
               <div class="portf protfolio-s-text  pb-2">
                 <h3> 18 million impressions and 18,000+ leads generated through targeted digital outreach </h3>
-                <a href="" class="text-white">Read More</a>
+                <a href="assets/img/home-img/scale-1.jpg" target="_blank" class="text-white">Check Details</a>
               </div>
             </div>
           </div>
@@ -188,7 +201,7 @@
           <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
             <div class="portf protfolio-s-text  pb-2">
               <h3> 42% increase in revenue, achieved with precision and strategic digital engagement </h3>
-              <a href="" class="text-white">Read More</a>
+              <a href="assets/img/home-img/scale-2.jpg" target="_blank" class="text-white">Check Details</a>
             </div>
           </div>
           <div class="col-lg-5" data-aos="fade-right" data-aos-delay="600">
@@ -203,7 +216,7 @@
             <div class="col-12 col-md-6 col-lg-12">
               <div class="portf protfolio-s-text  pb-2">
                 <h3> Cross-platform campaign creating significant brand lift and engagement worldwide </h3>
-                <a href="" class="text-white">Read More</a>
+                <a href="assets/img/home-img/scale-3.jpg" target="_blank" class="text-white">Check Details</a>
               </div>
             </div>
           </div>
@@ -217,8 +230,56 @@
 
       </div>
     </section>
+
+    <section class="tailored-offerings" id="client">
+      <div class="container">
+        <div class="row for-para align-items-center justify-content-center mb-5">
+          <div class="col-lg-8">
+            <div class="hero-text text-center">
+              <p><span style="color: #B2D234;">Clients </span> </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center mt-4 disha-gap">
+          <div class="col-lg-2 col-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="tailored-off-box">
+              <img src="assets/img/home-img/client/abb.png" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="tailored-off-box">
+              <img src="assets/img/home-img/client/airtel.png" class="img-fluid">
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-2 col-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="tailored-off-box">
+              <img src="assets/img/home-img/client/htc.png" class="img-fluid">
+            </div>
+          </div> -->
+
+          <div class="col-lg-2 col-6" data-aos="fade-up" data-aos-delay="800">
+            <div class="tailored-off-box">
+              <img src="assets/img/home-img/client/Mahindra_Rise_logo_logotype-700x190.png" class="img-fluid">
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-2" data-aos="fade-up" data-aos-delay="800">
+            <div class="tailored-off-box">
+              <img src="assets/img/home-img/client/Wienerberger.png" class="img-fluid">
+            </div>
+          </div> -->
+      
+        </div>
     
-    <section class="about-for-mob tailored-offerings">
+       
+
+      </div>
+    </section>
+    
+    <section id="about" class="about-for-mob tailored-offerings" >
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-8">
             <div class="hero-text for-para text-center">
@@ -247,7 +308,7 @@
         </div>
     </section>
 
-    <section class="nigel-about-desk-top tailored-offerings">
+    <section id="about" class="nigel-about-desk-top tailored-offerings" >
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-8">
@@ -307,12 +368,12 @@
               <div class="carousel-test-item ">
                 <div class="carousel-test-item-profile">
                   <p class="" style="color: #B0CB3A;">
-                    <img src="assets/img/home-img/testi/testi-1.png" class="img-fluid"> 
-                    Example Name <br> Designation or profile
+                    <!-- <img src="assets/img/home-img/testi/testi-1.png" class="img-fluid">  -->
+                    Jamie Taylor <br>  Co-founder & CEO
                   </p>
                 </div>
                 <!-- <img src="assets/img/home-img/testi/star.png" class="img-fluid carousel-test-item-data " width="20px"> -->
-                <p class="mt-2  text-white">Want to join our growing list of success stories? Get in touch to discuss your next campaign.</p>
+                <p class="mt-2  text-white">As a startup, we struggled with brand visibility. Disha's creative marketing solutions dramatically increased our market presence and customer engagement</p>
               </div>
             </div>
 
@@ -320,12 +381,12 @@
               <div class="carousel-test-item ">
                 <div class="carousel-test-item-profile">
                   <p class="" style="color: #B0CB3A;">
-                    <img src="assets/img/home-img/testi/testi-2.png" class="img-fluid"> 
-                    Example Name <br> Designation or profile
+                    <!-- <img src="assets/img/home-img/testi/testi-2.png" class="img-fluid">  -->
+                    Raj Patel <br> Market Expansion Lead
                   </p>
                 </div>
                 <!-- <img src="assets/img/home-img/testi/star.png" class="img-fluid carousel-test-item-data " width="20px"> -->
-                <p class="mt-2  text-white">Want to join our growing list of success stories? Get in touch to discuss your next campaign.</p>
+                <p class="mt-2  text-white">We needed to break into a new market and Disha’s strategic insights made it possible. Their detailed market analysis and execution plan were spot on.</p>
                 
               </div>
             </div>
@@ -334,12 +395,12 @@
               <div class="carousel-test-item ">
                 <div class="carousel-test-item-profile">
                   <p class="" style="color: #B0CB3A;">
-                    <img src="assets/img/home-img/testi/testi-3.png" class="img-fluid"> 
-                    Example Name <br> Designation or profile
+                    <!-- <img src="assets/img/home-img/testi/testi-3.png" class="img-fluid">  -->
+                    Elena Miro <br>  Digital Marketing Director
                   </p>
                 </div>
                 <!-- <img src="assets/img/home-img/testi/star.png" class="img-fluid carousel-test-item-data " width="20px"> -->
-                <p class="mt-2  text-white">Want to join our growing list of success stories? Get in touch to discuss your next campaign.</p>
+                <p class="mt-2  text-white">With Disha by our side, our digital campaigns didn’t just perform, they resonated across borders.</p>
               </div>
             </div>
 
@@ -347,12 +408,25 @@
               <div class="carousel-test-item ">
                 <div class="carousel-test-item-profile">
                   <p class="" style="color: #B0CB3A;">
-                    <img src="assets/img/home-img/testi/testi-4.png" class="img-fluid"> 
-                    Example Name <br> Designation or profile
+                    <!-- <img src="assets/img/home-img/testi/testi-4.png" class="img-fluid">  -->
+                    Thomas Kuhn <br> Strategy Manager
                   </p>
                 </div>
                 <!-- <img src="assets/img/home-img/testi/star.png" class="img-fluid carousel-test-item-data " width="20px"> -->
-                <p class="mt-2  text-white">Want to join our growing list of success stories? Get in touch to discuss your next campaign.</p>
+                <p class="mt-2  text-white">Tackling a new market was a major challenge for us, but Disha’s detailed research and customized approach made it a smooth and profitable expansion.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="carousel-test-item ">
+                <div class="carousel-test-item-profile">
+                  <p class="" style="color: #B0CB3A;">
+                    <!-- <img src="assets/img/home-img/testi/testi-4.png" class="img-fluid">  -->
+                    Isabella Roche <br> Product Launch Coordinator
+                  </p>
+                </div>
+                <!-- <img src="assets/img/home-img/testi/star.png" class="img-fluid carousel-test-item-data " width="20px"> -->
+                <p class="mt-2  text-white">The buzz Disha created around our product launch was incredible. Their expert use of multi-channel advertising made it our most successful launch to date.</p>
               </div>
             </div>
 
@@ -384,22 +458,37 @@
       </div>
     </section> -->
 
-    <section class="form-file">
+    <section class="form-file" id="contact">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
-            <form class="d-flex">
+            <form
+              action="https://forms.zohopublic.in/dishacommunications1/form/DishaCommunications/formperma/6eynUwO68cSOHmu6lrUDNga4pLN_sj08S805TRJHxNs/htmlRecords/submit"
+              name="form" method="POST" onsubmit="javascript:document.charset='UTF-8'; return zf_ValidateAndSubmit();"
+              accept-charset="UTF-8" enctype="multipart/form-data" id="form">
+    
+              <!-- Hidden Inputs for Zoho Integration -->
+              <input type="hidden" name="zf_referrer_name" value="">
+              <input type="hidden" name="zf_redirect_url" value="">
+              <input type="hidden" name="zc_gad" value="">
+    
               <!-- Email Field -->
-              <input type="email" class="form-control " id="email" placeholder="Enter your email" required style="border-radius: 0; border: 1px solid #ccc; border-top-left-radius: 10px; border-bottom-left-radius: 10px; padding: 15px;">
-              
-              <!-- Submit Button -->
-              <button type="submit" class="btn btn-primary" style="border-radius: 0; border-top-right-radius: 10px; border-bottom-right-radius: 10px;">Submit</button>
+              <div class="d-flex">
+                <input type="email" class="form-control" id="email" name="Email" checktype="c5" value=""
+                  placeholder="Enter your email" required
+                  style="border-radius: 0; border: 1px solid #ccc; border-top-left-radius: 10px; border-bottom-left-radius: 10px; padding: 15px;">
+    
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary"
+                  style="border-radius: 0; border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
+                  Submit
+                </button>
+              </div>
             </form>
           </div>
         </div>
       </div>
     </section>
-
 
   </main>
 
@@ -420,16 +509,16 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> About Us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Portfolio</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#about"> About Us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#client"> Clients</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#service"> Services</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Contact us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contact us</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#"> Privacy</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#"> Terms & Conditions</a></li>
             </ul>
@@ -450,10 +539,71 @@
         </div>
       </div>
     </div>
-
-   
-
   </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-get">
+        <div class="modal-header">
+          <h5 class="modal-title text-white" id="exampleModalLabel">Disha Communications</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-get">
+          <div class="zf-templateWidth">
+            <form
+                action='https://forms.zohopublic.in/dishacommunications1/form/DishaCommunications/formperma/6eynUwO68cSOHmu6lrUDNga4pLN_sj08S805TRJHxNs/htmlRecords/submit'
+                name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();'
+                accept-charset='UTF-8' enctype='multipart/form-data' id='form'><input type="hidden" name="zf_referrer_name"
+                    value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+                <input type="hidden" name="zf_redirect_url"
+                    value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+                <input type="hidden" name="zc_gad"
+                    value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+                <div class="zf-templateWrapper"><!---------template Header Starts Here---------->
+                    <!-- <ul class="zf-tempHeadBdr">
+                        <li class="zf-tempHeadContBdr">
+                            <h2 class="zf-frmTitle"><em></em></h2>
+                            <p class="zf-frmDesc"></p>
+                            <div class="zf-clearBoth"></div>
+                        </li>
+                    </ul> -->
+                    <!---------template Header Ends Here---------->
+                    <!---------template Container Starts Here---------->
+                    <div class="zf-subContWrap zf-topAlign">
+                        <ul>
+                            <!---------Email Starts Here---------->
+                            <li class="zf-tempFrmWrapper zf-large">
+                                <div class="zf-tempContDiv">
+                                    <span> <input fieldType=9 type="text" maxlength="255" name="Email" checktype="c5"
+                                            value="" placeholder="Enter&#x20;Your&#x20;Email" required /></span>
+                                    <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                                </div>
+                                <div class="zf-clearBoth"></div>
+                            </li><!---------Email Ends Here---------->
+                        </ul>
+                    </div><!---------template Container Starts Here---------->
+                    <ul>
+                        <li class="zf-fmFooter"><button class="zf-submitColor">Submit</button></li>
+                    </ul>
+                </div><!-- 'zf-templateWrapper' ends -->
+            </form>
+        </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
+    var zf_MonthYearRegex = new RegExp("^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
+    var zf_MandArray = [""];
+    var zf_FieldArray = ["Email"];
+    var isSalesIQIntegrationEnabled = false;
+    var salesIQFieldsArray = [];</script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery-3.7.1.min.js"></script>
@@ -469,6 +619,7 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
   <!-- Main JS File -->
+  <script src="assets/js/get-in-touch.js"></script>
   <script src="assets/js/main.js"></script>
 
   <script>

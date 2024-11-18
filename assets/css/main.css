@@ -964,6 +964,9 @@ section,
   padding: 20px;
   color: #ffffff;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
 }
 
 /* .carousel-test .item .carousel-test-item-profile img {
@@ -1409,4 +1412,23 @@ section,
 .df-flex{
   flex-direction: column-reverse;
 }
+}
+
+.modal-body-get{
+  padding: 0;
+}
+
+.modal-content-get{
+  background: linear-gradient(to right, #637521 0%, #616944 100%) !important;
+}
+
+/* Style the placeholder text for inputs in the modal */
+.modal-body input::placeholder {
+  color: white; /* Set the placeholder text color to white */
+  opacity: 1;   /* Ensure the placeholder is fully visible */
+}
+
+/* Optional: Adjust focus state if needed */
+.modal-body input:focus::placeholder {
+  color: white; /* Keep the placeholder color white on focus */
 }
